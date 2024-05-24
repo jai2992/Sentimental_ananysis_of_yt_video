@@ -11,7 +11,7 @@ nltk.download('vader_lexicon')
 
 from googleapiclient.discovery import build
 
-api_key = 'AIzaSyA9Q5L1W-8avZACOi-7QKz1Ukgpqp8o9ns'
+api_key = 'YOUR_API_KEY'
 youtube = build('youtube', 'v3', developerKey=api_key)
 
 def predict(video_id):
