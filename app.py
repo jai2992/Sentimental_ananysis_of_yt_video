@@ -7,11 +7,12 @@ import re
 import streamlit as st
 import time
 
+
 nltk.download('vader_lexicon')
 
 from googleapiclient.discovery import build
 
-api_key = 'YOUR_API_KEY'
+api_key = st.secrets["Google_key"]
 youtube = build('youtube', 'v3', developerKey=api_key)
 
 def predict(video_id):
